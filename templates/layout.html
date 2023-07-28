@@ -7,13 +7,6 @@
       rel="stylesheet"
       href="{{ url_for('static', filename= 'style.css') }}"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     {% if title %}
     <title>Typing Test - {{ title }}</title>
     {% else %}
@@ -21,7 +14,21 @@
     {% endif %}
   </head>
   <body>
-    <header></header>
+    <header>
+      <img
+        class="logo"
+        src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"
+        alt="logo"
+      />
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button>Contact</button></a>
+    </header>
     {% block content %}{% endblock %}
   </body>
 </html>
