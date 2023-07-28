@@ -1,15 +1,2 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {% if title %}
-    <title>Typing Test - {{ title }}</title>
-    {% else %}
-    <title>Typing Test</title>
-    {% endif %}
-  </head>
-  <body>
-    about page
-  </body>
-</html>
+{% extends "layout.html" %} {% block content %} about page {% endblock content
+%}
