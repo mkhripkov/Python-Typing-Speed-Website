@@ -7,8 +7,9 @@
     background-color: #24252A;
 }
 
+/* Font Styling */
 li, a, button {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; /* Using sans-serif as fallback font */
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
@@ -17,7 +18,7 @@ li, a, button {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Pushes left and right items to the edges and evenly spaces items in the center*/
     align-items: center;
     padding: 30px 10%;
 }
@@ -31,7 +32,7 @@ header {
 }
 
 .nav_links li {
-    display: inline-block;
+    display: inline-block; /* Makes list items display horizontally rather than vertically*/
     padding: 0px 20px;
 }
 
@@ -53,5 +54,5 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 0.8)
+    background-color: rgba(0, 136, 169, 0.8) /* Lower button's opacity value on hover */
 }
