@@ -17,5 +17,10 @@ def about():
 def contact():
     return render_template('contact.html', title='Contact')
 
+# FAQ Page
+@app.route('/faq')
+def faq():
+    return render_template('faq.html', title='FAQ')
+
 if __name__ == '__main__': # Allows us to run the script directly with Python
     app.run(debug=True)
